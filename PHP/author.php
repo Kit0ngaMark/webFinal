@@ -8,7 +8,6 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'Author') {
     exit();
 }
 
-// Author Dashboard Content
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +18,11 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'Author') {
     <title>Author Dashboard</title>
 </head>
 <body>
-    <h2>Welcome, Author!</h2>
-    <!-- Author Dashboard Content Here -->
+    <h2>Welcome, Author!</h2><ul>
+        <li><a href="update_profile.php">Update Profile</a></li>
+        <li><a href="add_article.php">Manage Articles</a></li>
+        <li><a href="view_articles.php">View Articles</a></li>
+        <li><a href="logout.php">Logout</a></li>
+    </ul>
 </body>
 </html>
