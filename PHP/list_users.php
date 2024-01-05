@@ -8,7 +8,6 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'Super_User') {
     exit();
 }
 
-// Fetch and display list of all users from the database
 $db = new Database();
 $conn = $db->getConnection();
 
